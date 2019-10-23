@@ -18,19 +18,12 @@ import java.util.ArrayList;
 
 
 public class ArticleFragment extends Fragment {
-    public ConstraintLayout top;
-
-    //spinner
-    public Spinner topSpin;
 
     //others from Adapter
     public ArrayList<Integer> imageIds = new ArrayList<>();
-    public ArrayList<Integer> articleIds = new ArrayList<>();
 
     //layout manager
     RecyclerView.LayoutManager layoutManager;
-
-    private OnFragmentInteractionListener mListener;
 
     public ArticleFragment() {
     }
@@ -64,8 +57,4 @@ public class ArticleFragment extends Fragment {
         imageIds.add(R.drawable.posthappy);
     }
 
-    public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
-    }
 }

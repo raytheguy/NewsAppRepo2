@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-#Thu Oct 17 00:25:00 AEDT 2019
-base.0=C\:\\Users\\Raymond\\Documents\\GitHub\\NewsApp_Repo\\ScrollingApplicationP2\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
-=======
-#Thu Oct 10 13:52:05 AEDT 2019
-base.0=/Users/Raymond/Documents/GitHub/NewsApp_Repo/ScrollingApplicationP2/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
->>>>>>> a38398397f878c471ace06eb42cbb3fc458d46c0
+#Fri Oct 18 19:35:20 AEDT 2019
+base.0=C\:\\Users\\Raymond\\Documents\\GitHub\\NewsAppRepo2\\ScrollingApplicationP2\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/Users/Raymond/Documents/GitHub/NewsApp_Repo/ScrollingApplicationP2/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
+base.1=C\:\\Users\\Raymond\\Documents\\GitHub\\NewsAppRepo2\\ScrollingApplicationP2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex

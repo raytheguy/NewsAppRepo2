@@ -20,7 +20,6 @@ public class BookFragment extends Fragment {
 
     //others from Adapter
     public ArrayList<Integer> imageIds = new ArrayList<>();
-    public ArrayList<Integer> bookIds = new ArrayList<>();
 
     //layout manager
     RecyclerView.LayoutManager layoutManager;
@@ -28,23 +27,21 @@ public class BookFragment extends Fragment {
     public BookFragment() {
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View v2 = inflater.inflate(R.layout.fragment_book, container, false);
         RecyclerView recyclerViewB = v2.findViewById(R.id.recycle_book);
-        //the arrayLists to put inside the RecycleViewBooks Adapter
         layoutManager = new LinearLayoutManager(getActivity());
         RecyclerViewAdapterBooks adapterBook = new RecyclerViewAdapterBooks(imageIds, getActivity());
         recyclerViewB.setAdapter(adapterBook);
         recyclerViewB.setLayoutManager(layoutManager);
+
         initImageIds();
 
         return v2;
     }
-
 
     //method is to obtain the imageIds and place them into an arrayList
     public void initImageIds() {
@@ -54,8 +51,4 @@ public class BookFragment extends Fragment {
         imageIds.add(R.drawable.ey);
     }
 
-    public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
-    }
 }

@@ -38,26 +38,13 @@ public class MainActivity extends AppCompatActivity {
         //button to go to another activity
         top = findViewById(R.id.top);
 
-<<<<<<< HEAD
         //save layout when rotated
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                     new ArticleFragment()).commit();
         }
 
-=======
-        //Spinners test: The spinner does not do anything
-        topSpin = findViewById(R.id.topSpin);
-        //Create an ArrayAdapter using array in string resources
-        ArrayAdapter<CharSequence> adapter =
-                ArrayAdapter.createFromResource(this, R.array.newsArray, android.R.layout.simple_spinner_item);
-        //Layout to use when list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        //apply adapter to spinner
-        topSpin.setAdapter(adapter);
-
         initImageIds();
-        initRecyclerViewer();
 
     }
 
@@ -71,16 +58,6 @@ public class MainActivity extends AppCompatActivity {
         imageIds.add(R.drawable.posthappy);
     }
 
-    //method is to initialise the recyclerViewer
-    public void initRecyclerViewer(){
-        RecyclerView recyclerView = findViewById(R.id.recyclerv_view);
-        //the arrayLists to put inside the RecycleView Adapter
-        RecyclerViewAdapter adapter = new RecyclerViewAdapter(imageIds,this);
-        recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
->>>>>>> a38398397f878c471ace06eb42cbb3fc458d46c0
-
-    }
 
     //listener for going to other fragments
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
